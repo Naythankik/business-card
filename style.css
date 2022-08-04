@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+}
+main {
+  background: lightgray;
+  display: flex;
+  margin: 220px auto;
+  width: 80%;
+}
+section.front-view {
+  background: #fcebeb;
+  height: 250px;
+  width: 471px;
+  margin: 20px auto;
+  display: grid;
+}
+div.top {
+  background: none;
+  display: flex;
+}
+div.front-left {
+  background: none;
+  padding: 20px 0;
+  width: 50%;
+  text-align: center;
+}
+.front-left p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 10px auto;
+  line-height: 16px;
+}
+div.front-right {
+  background: none;
+  display: grid;
+  width: 50%;
+}
+.front-top {
+  background: none;
+  text-align: center;
+  position: relative;
+  height: 200px;
+}
+.front-top p {
+  color: red;
+  font-family: Roboto;
+  margin: 20px auto;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+.front-top h3 {
+  color: red;
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 56px;
+}
+
+.front-bottom {
+  background: none;
+  display: flex;
+  height: 20px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.front-bottom p {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 0 10px;
+}
+div.bottom {
+  background: red;
+  height: 30px;
+  width: 471px;
+  text-align: center;
+  padding-top: 5px;
+}
+div.bottom a {
+  font-family: Roboto;
+  font-size: 14px;
+  color: white;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+/* The Back view of the business section */
+section.back-view {
+  background: #ffffff;
+  height: 258px;
+  width: 471px;
+  display: grid;
+  margin: 20px auto;
+}
+
+.back-view-top {
+  display: grid;
+  text-align: center;
+}
+
+.pin-container {
+  display: flex;
+  width: 90%;
+  margin: 15px auto 0 auto;
+}
+.pin-container > div.input {
+  height: 20px;
+  width: 390px;
+  border-right: 1px solid transparent;
+  border-top: 5px solid #32a2e1;
+  border-width: 50px;
+  position: relative;
+}
+div.input > label {
+  position: absolute;
+  width: 40px;
+  left: 29px;
+  bottom: 5px;
+  font-family: Roboto;
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+}
+div.input > input {
+  position: absolute;
+  height: 30px;
+  width: 229px;
+  left: 75px;
+  bottom: 5px;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+}
+.pin-container > object {
+  height: 60px;
+  width: 50px;
+}
+
+.back-view-top > p {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 300;
+}
+.back-view-top p > span {
+  font-family: Roboto;
+  font-size: 18px;
+  font-weight: 700;
+}
+.back-view-top > h3 {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 500;
+}
+
+.back-view-bottom {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+.codes {
+  margin: 5px 25px;
+  display: grid;
+}
+.codes > p {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.back-view-bottom > object {
+  height: 24px;
+  width: 120px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+}
+
+@media screen and (max-width: 500px) {
+  main {
+    display: none;
+  }
+}
